@@ -25,11 +25,20 @@ class SpriteStripAnim(object):
         self.f = frames
 
         def iter(self):
+            """
+            Resets values of frames and iterator; returns self
+            """
             self.i = 0
             self.f = self.frames
             return self
 
         def next(self):
+            """
+            Returns an image object for each frame in the sprite strip
+
+            Raises:
+                StopIteration
+            """
             if self.i >= len(self.images):
                 if not self.loop:
                     raise StopIteration
@@ -46,4 +55,4 @@ class SpriteStripAnim(object):
 
         def __add__(self, ss):
             self.images.extend(ss.images)
-            return  self
+            return self
