@@ -1,3 +1,58 @@
+"""
+
+------------------ Rice Rocks (Asteroids) ----------------
+
+How to start and stop the game:
+
+Click the 'play' button at the top left corner of
+CodeSkulptor to start the game. A popout window will appear
+with a menu. Simply click the menu to begin.
+
+To stop, exit the popout window and click the 'reset'
+button (to the right of the folder icon).
+
+Controls:
+
+Use arrow keys to control the ship and spacebar to fire
+missiles.
+
+                       thrust
+                         ^
+                         |
+        rotate-left <--- | ---> rotate-right
+                    ___________
+                   |___shoot___|
+
+
+Your score will be printed to the right console after each
+match. Currently there is not an in game high score label.
+
+NOTE:
+    Consider this a beta version of the game. There are
+    still some small bugs to fix and the code could be
+    cleaned up a bit.
+
+Potential improvements:
+
+- Add max score label
+- Create stages with increasing levels of difficulty
+- Have rocks break apart into smaller rocks
+- Add some enemy AI ships
+- Incorporate own artwork
+
+For the curious:
+    Feel free to skim over the code and see what's going on.
+    If you'd like to change the code up be sure to save
+    your work by clicking the floppy disk in the left
+    corner of CodeSkulptor and then saving the url somewhere.
+    This will NOT affect the version that is presented to you
+    from the website.
+
+                        Enjoy
+-----------------------------------------------------------
+
+"""
+
 # program template for Spaceship
 import simplegui
 import math
